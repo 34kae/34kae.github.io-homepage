@@ -1,0 +1,41 @@
+/* preload images */
+body:after {
+   position: absolute;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   z-index: -1;
+   content: url(../img/chinese_girl.jpg) url(../img/chinese_girl_2.jpg);
+} /* No need to understand the code here */
+
+
+.img1 {
+   width: 250px;
+   height: 300px;
+   margin-left: 200px;
+}
+
+.url_img1 {
+   width: 250px;
+   height: 300px;
+   background-image: url(../img/chinese_girl.jpg);
+   /* cover the box's width & height */
+   background-size: cover; 
+   background-position: center;
+   background-repeat: no-repeat;
+   /* transition effect when changing to another */
+   transition: all ease-in-out 700ms;
+}
+
+/* specify pseudo-element */
+.url_img1:hover {
+   background-image: url(../img/chinese_girl_2.jpg);
+   /* Note: flickering issue arises, fixed using pseudo-element, after to preload imgs */
+   /* transition effect when changing to another */
+   transition: all ease-in-out 700ms
+}
+
+
+body {
+   background-color: rgb(134, 121, 121);
+}

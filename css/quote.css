@@ -1,0 +1,65 @@
+@font-face {
+   font-family: caveat_brush;
+   src: url(../fonts/CaveatBrush-Regular.ttf);
+}
+
+header {
+   width: 100%;
+   height: 48px;
+}
+
+main {
+   width: 100%;
+   min-height: calc(100vh - 48px - 22px);
+   background-color: grey;
+   display: flex;
+   flex-direction: column;
+}
+
+.main-first-div {
+   background-color: cyan;
+   display: flex;
+   justify-content: space-around;
+   height: 100%;
+   background-image: url(../img/clouds.jpg);
+   flex-wrap: wrap;
+   flex-grow: 1;
+}
+
+.main-second-div {
+   background-color: green;
+   display: flex;
+   justify-content: space-around;
+   height: 100%;
+   background-image: url(../img/politician.jpg);
+   flex-wrap: wrap;
+   flex-grow: 1;
+}
+
+.main-third-div {
+   background-color: purple;
+   display: flex;
+   justify-content: space-around;
+   height: 100%;
+   background-image: url(../img/motivation.jpg);
+   flex-wrap: wrap;
+   flex-grow: 1;
+}
+
+.quote-frame {
+   background-color: rgb(140, 217, 236);
+   height: 226px;
+   width: 286px;
+   align-self: center;
+
+   display: flex;
+   padding: 15px 15px;
+
+   border-radius: 10px;
+   border: solid 10px;
+}
+
+.quote {
+   font-size: small;
+   align-self: center;
+}

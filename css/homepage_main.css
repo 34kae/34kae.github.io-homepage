@@ -1,0 +1,36 @@
+@font-face {
+   font-family: caveat_brush;
+   src: url(../fonts/CaveatBrush-Regular.ttf);
+}
+
+main {
+   width: 100%;
+   min-height: calc(100vh - 70px - 22px);
+   background-color: aqua;
+   margin-top: 70px;
+   background-image: url(../img/main_background.jpg);
+   background-size: cover;
+   background-repeat:no-repeat;
+   background-position: centre;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+main h1 {
+   font-family: caveat_brush;
+   color: rgb(4, 4, 5);
+
+   font-size: xxx-large;
+   font-weight: 200;
+}
+
+main p {
+   font-family: caveat_brush;
+   color: rgb(0, 0, 0);
+
+   font-size: x-large;
+   font-weight: 200;
+}
